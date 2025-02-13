@@ -17,6 +17,30 @@
 .herma-description {
     font-size: 20px;
     color: rgb(160, 160, 160);
+    margin-bottom: 50px;
+}
+
+.lang-select {
+    background: none;
+    padding: 5px 10px;
+    color: var(--primary-gray);
+    border: none;
+    border-bottom: 2px solid var(--primary-gray);
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    transition: border var(--primary-transition), color var(--primary-transition);
+}
+
+.lang-select:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+option {
+    background-color: black;
+    cursor: pointer;
 }
 
 .chat-bot-container {
