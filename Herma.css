@@ -3,6 +3,7 @@
     --primary-hover: rgb(186, 182, 59);
     --primary-dark-hover: rgb(120, 118, 39);
     --primary-light-hover: rgb(255, 251, 144);
+    --primary-gray: rgb(150, 150, 150);
     --primary-transition: 0.3s;
     --primary-border-radius: 10px;
 }
