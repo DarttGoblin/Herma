@@ -28,7 +28,7 @@
     border-bottom: 2px solid var(--primary-gray);
     font-size: 18px;
     outline: none;
-    cursor: pointer;
+    cursor: not-allowed;
     text-align: center;
     transition: border var(--primary-transition), color var(--primary-transition);
 }
