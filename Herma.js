@@ -22,7 +22,7 @@ start_consulting.onclick = InitialiseChat;
 lang_select.onchange = function() {ChangeLanguage(lang_select.value);}
 UserAnswer();
 
-function SendPrompt(user_responses) {
+function SendPromptk(user_responses) {
     fetch('http://localhost:3069', {
         method: 'POST',
         headers: {
