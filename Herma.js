@@ -23,7 +23,7 @@ lang_select.onchange = function() {ChangeLanguage(lang_select.value);}
 UserAnswer();
 
 function SendPrompt(user_responses) {
-    fetch('http://localhost:3069', {
+    fetch('https://web-production-b337f.up.railway.app/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
