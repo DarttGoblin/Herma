@@ -29,22 +29,28 @@ function SendPrompt(user_responses) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ user_responses }),
+        credentials: 'omit'
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         if (data.success) {
-            console.log('success');
+            console.log('Success:', data);
             GenerateResponse(data.result, data.probabilities);
             lang_select.style.cursor = 'not-allowed';
             lang_select.disabled = true;
         } else {
-            console.log('Model failure');
-            alert('There was an error generating the respone! please try again or refresh the page.')
+            console.error('Model failure:', data.error);
+            alert('There was an error generating the response! Please try again or refresh the page.');
         }
     })
     .catch(err => {
-        console.log('Server failure');
-        alert('There was an error in the server! please try again or refresh the page.')
+        console.error('Server failure:', err);
+        alert('There was an error connecting to the server! Please try again or refresh the page.');
     });
 }
 
