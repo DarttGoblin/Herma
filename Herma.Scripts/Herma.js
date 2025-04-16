@@ -201,4 +201,8 @@ const divorce_stable_arabic = ['الطلاق', 'علاقة مستقرة'];
 
 const welcome_user_english = "I'm here to help you gain insights into your relationship dynamics. Let's begin by assessing your responses to a series of statements. Answer honestly to receive a personalized analysis. 💡";
 const welcome_user_frensh = "Je suis là pour vous aider à mieux comprendre la dynamique de votre relation. Commençons par évaluer vos réponses à une série d'affirmations. Répondez honnêtement pour recevoir une analyse personnalisée. 💡";
+<<<<<<< HEAD
 const welcome_user_arabic = "أنا هنا لمساعدتك في فهم ديناميكيات علاقتك. لنبدأ بتقييم إجاباتك على سلسلة من العبارات. أجب بصدق للحصول على تحليل مخصص. 💡";
+=======
+const welcome_user_arabic = "أنا هنا لمساعدتك في فهم ديناميكيات علاقتك. لنبدأ بتقييم إجاباتك على سلسلة من العبارات. أجب بصدق للحصول على تحليل مخصص. 💡";
+>>>>>>> c0176bb5600585b035600a1639c6eccda637d388

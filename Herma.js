@@ -29,8 +29,14 @@ function SendPrompt(user_responses) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ user_responses }),
+        credentials: 'omit'
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         if (data.success) {
             console.log('success');
