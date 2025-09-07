@@ -14,7 +14,7 @@ let divorce_prediction = divorce_prediction_english;
 let by = by_english;
 let divorce_stable = divorce_stable_english;
 let user_responses = [];
-let typing_speed = 0;
+let typing_speed = 20;
 let question_index = 0;
 
 lang_select.disabled = true;
@@ -75,7 +75,7 @@ function InitialiseChat() {
         })(i);
     }
 
-    setTimeout(() => {CreateBotMessage(statements[question_index]);}, 0);
+    setTimeout(() => {CreateBotMessage(statements[question_index]);}, 4000);
 }
 
 function UserAnswer() {
