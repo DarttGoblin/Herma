@@ -23,7 +23,7 @@ lang_select.onchange = function() {ChangeLanguage(lang_select.value);}
 UserAnswer();
 
 function SendPrompt(user_responses) {
-    fetch('http://localhost:3069', {
+    fetch('https://cb37e963-b822-4eb9-847b-1d254f844843-00-3n8lqgm3rok7l.picard.replit.dev:3000/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
